@@ -80,9 +80,10 @@ if (!isset($_GET['obj']) || !isset($_GET['action']) || !isset($_GET['id']))
 									$handle = opendir($path);
 						            if(count(scandir($path)) > 2)
 						            {
-						            while (false !== ($file = readdir($handle))) {
-						            	var_dump($file);
 						            	$i = 0;
+						            while (false !== ($file = readdir($handle))) {
+						            	
+
 						              if ($file != "." && $file != "..") {
 						              	
 										$i++;
