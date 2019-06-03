@@ -84,7 +84,7 @@ if (!isset($_GET['obj']) || !isset($_GET['action']) || !isset($_GET['id']))
 						            	
 						              if ($file != "." && $file != "..") {
 						              	$i = 0;
-$i++;
+										$i++;
 						              	$path_file = url('assets/images/events/' . $event['id'] . '/' . $file);
 						              	$path = path('assets/images/events/' . $event['id'] . '/' . $file);
 						                  ?>
@@ -103,7 +103,7 @@ $i++;
 								<p>
 									<!-- Button trigger modal -->
 									<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal-<?= $i ?>">Ver</button>
-									<a onclick="del('<?= url('admin/photo/delete/') ?>', '<?= $event['id'] . "-" . strstr($file,".",true) ?>')" class="btn btn-danger btn-sm">Deletar</a>
+									<a onclick="del('<?= url('admin/photo/delete/') ?>', '<?= $event['id'] . "-" . strstr($file,".",true) ?>')" class="btn btn-danger btn-sm">Deletar<?= $i ?></a>
 								</p>
 							</div>
 
@@ -126,7 +126,7 @@ $i++;
 							  </div>
 							</div>
 						                  <?php
-						              $i++; }
+						               }
 							?>
 					<?php		}
 							}else{ ?>
