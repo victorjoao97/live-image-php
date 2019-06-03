@@ -82,8 +82,9 @@ if (!isset($_GET['obj']) || !isset($_GET['action']) || !isset($_GET['id']))
 						            {
 						            while (false !== ($file = readdir($handle))) {
 						            	var_dump($file);
-						              if ($file != "." || $file != "..") {
-						              	$i = 0;
+						            	$i = 0;
+						              if ($file != "." && $file != "..") {
+						              	
 										$i++;
 						              	$path_file = url('assets/images/events/' . $event['id'] . '/' . $file);
 						              	$path = path('assets/images/events/' . $event['id'] . '/' . $file);
