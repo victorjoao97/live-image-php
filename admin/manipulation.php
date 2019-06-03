@@ -81,7 +81,7 @@ if (!isset($_GET['obj']) || !isset($_GET['action']) || !isset($_GET['id']))
 						            if(count(scandir($path)) > 2)
 						            {
 						            while (false !== ($file = readdir($handle))) {
-						            	
+						            	var_dump($file);
 						              if ($file != "." && $file != "..") {
 						              	$i = 0;
 										$i++;
