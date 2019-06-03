@@ -56,7 +56,7 @@ require_once root.'config/functions.php';
 date_default_timezone_set('America/Sao_Paulo');
 session_start();
 
-$errors = 0;
+$errors = 1;
 if ($errors == 1) {
 	ini_set('display_errors', 'On');
 	ini_set('display_startup_errors', 'On');
