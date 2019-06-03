@@ -20,7 +20,7 @@ define("DB_HOSTNAME", "localhost");
 // 	define("DB_CHARSET", "utf8");
 // endif;
 
-define('path', 'selfie');
+define('path', '');
 // phpinfo();
 // if (strpos($_SERVER['DOCUMENT_ROOT'], "/") === true)
 // {
