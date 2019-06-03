@@ -10,7 +10,7 @@ define("DB_DATABASE", substr($url["path"], 1));
 // 	define("DB_USERNAME", "root");
 // 	define("DB_PASSWORD", "");
 // 	define("DB_DATABASE", "projeto_selfie");
-// 	define("DB_CHARSET", "utf8");
+define("DB_CHARSET", "utf8");
 // if ($_SERVER['HTTP_HOST']=='localhost'):
 // 	// BANCO DE DADOS LOCALHOST
 // 	define("DB_HOSTNAME", "localhost");
