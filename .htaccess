@@ -6,7 +6,7 @@ RewriteRule ^admin/logon/?$ /selfie/admin/login.php [NC,L]
 
 RewriteRule ^admin/logout/?$ /selfie/admin/sair.php [NC,L]
 
-RewriteRule ^admin/home/?$ /selfie/admin/index.php [NC,L]
+RewriteRule ^admin/home/?$ admin/index.php [NC,L]
 
 RewriteRule ^admin/upload/?$ /selfie/admin/upload.php [NC,L]
 
