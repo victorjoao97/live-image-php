@@ -6,7 +6,15 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit03e591e1983bf5d494f721bcc4d45347
 {
+    public static $files = array (
+        '4839bcea4e846c25c0e476b2a0370afc' => __DIR__ . '/..' . '/derrabus/ereg-shim/src/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Rabus\\EregShim\\' => 15,
+        ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
@@ -18,6 +26,10 @@ class ComposerStaticInit03e591e1983bf5d494f721bcc4d45347
     );
 
     public static $prefixDirsPsr4 = array (
+        'Rabus\\EregShim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/derrabus/ereg-shim/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
