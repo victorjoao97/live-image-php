@@ -2,20 +2,20 @@ RewriteBase /
 
 RewriteEngine on
 
-RewriteRule ^admin/logon/?$ /selfie/admin/login.php [NC,L]
+RewriteRule ^admin/logon/?$ admin/login.php [NC,L]
 
-RewriteRule ^admin/logout/?$ /selfie/admin/sair.php [NC,L]
+RewriteRule ^admin/logout/?$ admin/sair.php [NC,L]
 
 RewriteRule ^admin/home/?$ admin/index.php [NC,L]
 
-RewriteRule ^admin/upload/?$ /selfie/admin/upload.php [NC,L]
+RewriteRule ^admin/upload/?$ admin/upload.php [NC,L]
 
-RewriteRule ^download/primeiro/page/([0-9]+)/?$ /selfie/download/primeiro/index.php?page=$1 [NC]
+RewriteRule ^download/primeiro/page/([0-9]+)/?$ download/primeiro/index.php?page=$1 [NC]
 
-RewriteRule ^event/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([0-9]+)/?$ /selfie/view.php?hue=$3&q=$2&a=$1 [NC]
+RewriteRule ^event/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([0-9]+)/?$ view.php?hue=$3&q=$2&a=$1 [NC]
 
-RewriteRule ^admin/([A-Za-z-]+)/([A-Za-z-]+)/([A-Za-z0-9-]+)/?$ /selfie/admin/manipulation.php?obj=$1&action=$2&id=$3 [NC]
+RewriteRule ^admin/([A-Za-z-]+)/([A-Za-z-]+)/([A-Za-z0-9-]+)/?$ admin/manipulation.php?obj=$1&action=$2&id=$3 [NC]
 
-RewriteRule ^admin/([A-Za-z-]+)/([A-Za-z-]+)/?$ /selfie/admin/add.php?obj=$1&action=$2 [NC]
+RewriteRule ^admin/([A-Za-z-]+)/([A-Za-z-]+)/?$ admin/add.php?obj=$1&action=$2 [NC]
 
-RewriteRule ^events/?$ /selfie/events.php [NC,L]
+RewriteRule ^events/?$ events.php [NC,L]
