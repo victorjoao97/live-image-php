@@ -30,10 +30,10 @@ define('path', '');
 // }
 $separator = '/';
 if (path) {
-	define("url", 'http://'.$_SERVER['HTTP_HOST'] . '/' . path . '/');
+	define("url", 'https://'.$_SERVER['HTTP_HOST'] . '/' . path . '/');
 	define("root", $_SERVER['DOCUMENT_ROOT'] . $separator . path . '/');
 }else{
-	define("url", 'http://'.$_SERVER['HTTP_HOST'] . '/');
+	define("url", 'https://'.$_SERVER['HTTP_HOST'] . '/');
 	define("root", $_SERVER['DOCUMENT_ROOT'] . $separator);
 }
 
