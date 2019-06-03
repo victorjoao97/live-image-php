@@ -99,7 +99,7 @@ function encode($string, $slug = false) {
     // $string = trim($string, $slug);
     // }
 
-  $string = ereg("[^a-zA-Z0-9_]", "", strtr($string, "áàãâéêíóôõúüçÁÀÃÂÉÊÍÓÔÕÚÜÇ ", "aaaaeeiooouucAAAAEEIOOOUUC_"));
+  $string = \Rabus\EregShim\Ereg::ereg("[^a-zA-Z0-9_]", "", strtr($string, "áàãâéêíóôõúüçÁÀÃÂÉÊÍÓÔÕÚÜÇ ", "aaaaeeiooouucAAAAEEIOOOUUC_"));
 
   
 return $string;
