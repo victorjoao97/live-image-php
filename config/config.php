@@ -3,7 +3,7 @@ $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
 define("DB_HOSTNAME",$url["host"]);
 define("DB_USERNAME", $url["user"]);
-define("DB_PASSWORD", $url["pass"];
+define("DB_PASSWORD", $url["pass"]);
 define("DB_DATABASE", substr($url["path"], 1));
 
 // define("DB_HOSTNAME", "localhost");
