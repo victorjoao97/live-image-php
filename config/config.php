@@ -1,5 +1,5 @@
 <?php
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url = parse_url(getenv("CLEARDB_AMBER_URL"));
 
 define("DB_HOSTNAME",$url["host"]);
 define("DB_USERNAME", $url["user"]);
@@ -26,7 +26,7 @@ define("DB_CHARSET", "utf8");
 // 	define("DB_DATABASE", "u733009724_tcc");
 // 	define("DB_CHARSET", "utf8");
 // endif;
-
+ 
 define('path', '');
 // phpinfo();
 // if (strpos($_SERVER['DOCUMENT_ROOT'], "/") === true)
