@@ -3,7 +3,7 @@ require_once "config/config.php";
 $event = DBRead( 'events', "where id = '{$_GET['id']}' order by date desc limit 1" )[0];
 // Get real path for our folder
 $rootPath = realpath(path("assets/images/events/" . $event['id']));
-
+var_dump($rootPath);
 // Initialize archive object
 $zip = new ZipArchive();
 $zip->open($event['id'].'.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
