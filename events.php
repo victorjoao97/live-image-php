@@ -22,8 +22,8 @@ include path('include/header.php');
 	                $thumb = $files[rand(0,count($files)-1)];
 	            ?>
 	            <div class="col-sm-6 col-md-4 col-xs-4">
-	            	<div class="thumbnail">
-	                 	<img src="<?= url('assets/images/events/' . $value['id'] . '/' . $thumb) ?>" alt="...">
+	            	<div>
+	                 	<img src="<?= url('assets/images/events/' . $value['id'] . '/' . $thumb) ?>" alt="..." class="img-thumbnail" style="width: 300px; height: 300px">
 	                	<div class="caption">
 	                    	<h3><?= $value['name'] ?></h3>
 	                    	<p><?= date_event($value['date'], "d/m/Y") . ' - ' . $value['location'] ?></p>
