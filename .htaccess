@@ -10,7 +10,7 @@ RewriteRule ^admin/home/?$ admin/index.php [NC,L]
 
 RewriteRule ^admin/upload/?$ admin/upload.php [NC,L]
 
-RewriteRule ^event/download/([0-9]+)/?$ download.php?id=$1 [NC]
+RewriteRule ^download/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([0-9]+)/?$ download.php?id=$1 [NC]
 
 RewriteRule ^event/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([0-9]+)/?$ view.php?hue=$3&q=$2&a=$1 [NC]
 
