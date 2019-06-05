@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b8d5edf05575a9964783c90243b14a0",
+    "content-hash": "4b0ee70ddc75d96e07f57cea24739cda",
     "packages": [
         {
             "name": "derrabus/ereg-shim",
@@ -231,7 +231,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "ext-mbstring": "^7.3"
+        "ext-mbstring": "^7.3",
+        "ext-gd": "*"
     },
     "platform-dev": []
 }
