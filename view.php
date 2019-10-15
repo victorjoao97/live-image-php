@@ -88,7 +88,7 @@ else
         if (galleryarray.length == 0) {
           $("body").attr("style", "background-image:none; background-repeat: round;webkit-transition: all 3s ease;-moz-transition: all 3s ease;-o-transition: all 3s ease;transition: all 3s ease;");
         }else{
-          document.getElementById("body").setAttribute("style", "background-image:url('"+galleryarray[curimg]+"'); background-repeat: round;webkit-transition: all 3s ease;-moz-transition: all 3s ease;-o-transition: all 3s ease;transition: all 3s ease;");
+          document.getElementById("body").setAttribute("style", "background-image:url('"+galleryarray[curimg]+"'); background-repeat: round;background-size: cover;webkit-transition: all 3s ease;-moz-transition: all 3s ease;-o-transition: all 3s ease;transition: all 3s ease;");
         }
       }
 
